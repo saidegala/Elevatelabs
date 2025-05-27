@@ -80,6 +80,3 @@ Screenshots used in this report are from trusted educational resources:
 
 ---
 
-## 📌 License
-
-This repository is for **educational purposes only**. Do not use any materials herein for malicious activities. Respect all copyrights.
