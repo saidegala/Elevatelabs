@@ -10,7 +10,7 @@
   - Failed SPF/DKIM/DMARC
   - Suspicious IP in `Received` fields
 
-📸 Screenshot: `screenshots/email_headers_analysis.png`
+📸 ![Email Headers Analysis](screenshots/email_headers_analysis.png)
 
 ---
 
