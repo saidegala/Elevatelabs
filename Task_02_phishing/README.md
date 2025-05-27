@@ -15,15 +15,16 @@
 ---
 
 ### 2. Examine the Sender's Email Address
-- Watch for spoofed or misspelled domains (e.g., `@paypa1.com` instead of `@paypal.com`)
+- Watch for spoofed or misspelled domains 
 
-📸 ![Spoofed Email Address](screenshots/spoofed_email_address.png)
+📸 <img src="screenshots/spoofed_email_address.png" alt="Spoofed Email Address" width="400" />
+
 
 ---
 
 ### 3. Identify Suspicious Links
 - Hover over links without clicking
-- Ensure URLs match their claimed domain (e.g., `secure.apple.com` vs `apple-login.security.ru`)
+- Ensure URLs match their claimed domain 
 
 📸 ![Mismatched URL Hover](screenshots/mismatched_url_hover.jpg)
 
