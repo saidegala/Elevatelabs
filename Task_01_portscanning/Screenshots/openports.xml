@@ -4,14 +4,13 @@ Nmap scan report for 192.168.1.120
 Host is up.
 All 1000 scanned ports on 192.168.1.120 are in ignored states.
 Not shown: 1000 filtered tcp ports (no-response)
-MAC Address: DC:21:48:E4:26:E0 (Intel Corporate)
 
 Nmap scan report for 192.168.1.138
 Host is up (0.013s latency).
 Not shown: 999 closed tcp ports (reset)
 PORT     STATE    SERVICE
 5060/tcp filtered sip
-MAC Address: AA:28:78:EA:DD:F6 (Unknown)
+
 
 Nmap scan report for 192.168.1.254
 Host is up (0.0055s latency).
@@ -21,7 +20,7 @@ PORT    STATE    SERVICE
 53/tcp  open     domain
 80/tcp  open     http
 443/tcp open     https
-MAC Address: 4C:22:F3:C3:46:77 (Arcadyan)
+
 
 Nmap scan report for 192.168.1.130
 Host is up (0.00079s latency).
