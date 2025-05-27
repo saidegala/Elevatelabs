@@ -17,7 +17,7 @@
 ### 2. Examine the Sender's Email Address
 - Watch for spoofed or misspelled domains 
 
-📸 <img src="screenshots/spoofed_email_address.png" alt="Spoofed Email Address" width="1080" height="800" />
+📸 <img src="screenshots/spoofed_email_address.png" alt="Spoofed Email Address" width="1080" height="400" />
 
 
 ---
