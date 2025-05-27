@@ -10,7 +10,7 @@
   - Failed SPF/DKIM/DMARC
   - Suspicious IP in `Received` fields
 
-📸 ![Email Headers Analysis](screenshots/email_headers_analysis.jpg)
+📸 <img src="screenshots/email_headers_analysis.jpg" alt="Email Headers Analysis" width="1080" height="500" />
 
 ---
 
@@ -26,7 +26,7 @@
 - Hover over links without clicking
 - Ensure URLs match their claimed domain 
 
-📸 ![Mismatched URL Hover](screenshots/mismatched_url_hover.jpg)
+📸 <img src="screenshots/mismatched_url_hover.jpg" alt="Mismatched URL Hover" width="400" height="500" />
 
 ---
 
@@ -36,14 +36,14 @@
   - "You must act now"
   - "Final warning!"
 
-📸 ![Threatening Language](screenshots/threatening_language.png)
+📸 <img src="screenshots/threatening_language.png" alt="Threatening Language" width="400" height="500" />
 
 ---
 
 ### 5. Check for Spelling or Grammar Errors
 - Phishing emails often contain awkward phrasing, misspellings, or odd formatting
 
-📸 ![Grammar Errors](screenshots/grammar_errors.png)
+📸 <img src="screenshots/grammar_errors.png" alt="Grammar Errors" width="400" />
 
 ---
 
