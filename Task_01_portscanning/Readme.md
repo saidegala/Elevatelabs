@@ -1,10 +1,29 @@
-# 🔐 Internal Network Scan Report
+# 🔍 Task 1: Scan Local Network for Open Ports
 
-This repository contains results and analysis from an internal network scan performed using **Nmap**. The scan identifies open/filtered ports, assesses potential security risks, and provides remediation steps for each identified device.
+To analyze network traffic in a local network, several tools can be used. For this task, the primary tools used were:
+
+- **Wireshark** – Packet capture and analysis  
+- **Nmap** – Network scanning and host discovery  
+- Other useful tools: `tcpdump`, `netstat`
 
 ---
 
-## 📋 Summary
+## 🛠️ Nmap Scan Overview
+
+1. **Download & Install** Nmap from the official site: [nmap.org/download](https://nmap.org/download)  
+2. **Scan Command Used**:
+   ```bash
+   nmap -sS -p- 192.168.1.0/24
+   
+ * Performs a stealth scan (-sS) on all ports (-p-) across the subnet.
+
+ * Scan results can be saved (default format is .xml).
+
+3. we can save the scan or download the scan default it is in xml extentison.
+
+4. below you can see the example 
+
+---
 
 | IP Address     | Device Info          | Ports Identified                             |
 |----------------|----------------------|----------------------------------------------|
@@ -14,84 +33,40 @@ This repository contains results and analysis from an internal network scan perf
 
 ---
 
+These are my finding using Nmap , i found 3 devices connected to my network .
+
 ## 🔎 Detailed Findings
 
 ### 🖥️ 192.168.1.138 — Unknown Device
 
-- **Filtered Port:**
-  - `5060/tcp` – SIP (Session Initiation Protocol)
-
-- **Risk:**
-  - May indicate a VoIP device. SIP is often targeted for eavesdropping or unauthorized access.
-
-- **Mitigation:**
-  - Disable SIP service if not required.
-  - Ensure VoIP system uses secure transport (TLS/SRTP).
-  - Restrict access to known IPs or internal subnets.
+| **Open Port** | **Protocol/Use**     | **Commonly Found In**   | **Risk Level** | **Mitigation**                                               |
+| -------- | -------------------- | ----------------------- | -------------- | ------------------------------------------------------------ |
+| 5060     | SIP (VoIP signaling) | VoIP systems, IP phones | High           | Use firewalls, disable if unused, encrypt SIP (use TLS/5061) |
 
 ---
 
 ### 🌐 192.168.1.254 — Arcadyan Router (Default Gateway)
 
-- **Open Ports:**
-  - `53/tcp` – DNS
-  - `80/tcp` – HTTP
-  - `443/tcp` – HTTPS
-
-- **Filtered Port:**
-  - `22/tcp` – SSH
-
-- **Risk:**
-  - Web interface may be exposed.
-  - Open DNS may be exploited for tunneling.
-  - SSH visibility increases brute-force attack risk.
-
-- **Mitigation:**
-  - Disable HTTP; enforce HTTPS with strong credentials.
-  - Restrict management access by IP.
-  - Disable remote SSH or use key-based authentication.
-  - Update router firmware regularly.
+| **Open Ports** | **Protocol/Use**           | **Commonly Found In**      | **Risk Level** | **Mitigation**                                |
+| -------- | -------------------------- | -------------------------- | -------------- | --------------------------------------------- |
+| 53/tcp   | DNS (Domain Name System)   | DNS servers, network tools | Medium         | Restrict access, monitor traffic, use DNSSEC  |
+| 80/tcp   | HTTP (Web traffic)         | Web servers, browsers      | High           | Use HTTPS instead, apply web server hardening |
+| 443/tcp  | HTTPS (Secure web traffic) | Secure websites, APIs      | Medium         | Keep SSL/TLS updated, use strong ciphers      |
 
 ---
 
 ### 💻 192.168.1.130 — Likely Windows Host
 
-- **Open Ports:**
-  - `135/tcp` – Microsoft RPC
-  - `139/tcp` – NetBIOS
-  - `445/tcp` – SMB
-  - `902/tcp` – VMware Service
-  - `912/tcp` – Apex Mesh
-  - `5357/tcp` – WSDAPI
-  - `8090/tcp` – Possibly messaging or custom app
+| **Port** | **Protocol/Use**           | **Commonly Found In**              | **Risk Level** | **Mitigation**                                               |
+| -------- | -------------------------- | ---------------------------------- | -------------- | ------------------------------------------------------------ |
+| 135/tcp  | Microsoft RPC              | Windows systems (DCOM services)    | High           | Block externally, restrict access via firewall               |
+| 139/tcp  | NetBIOS                    | Windows file/printer sharing       | High           | Disable if not needed, use SMB over TCP (445) instead        |
+| 445/tcp  | SMB (Server Message Block) | Windows file sharing, AD services  | High           | Disable if unused, patch SMB vulnerabilities, firewall rules |
+| 902/tcp  | VMware Service             | VMware ESXi, vSphere               | Medium         | Restrict to management network, update VMware software       |
+| 912/tcp  | Apex Mesh                  | Possibly IoT or mesh systems       | Medium         | Investigate use, close if unnecessary                        |
+| 5357/tcp | WSDAPI (Web Services)      | Windows devices (device discovery) | Medium         | Disable WSD if unused, limit network scope                   |
+| 8090/tcp | Custom App or Messaging    | Web servers, chat apps             | Varies         | Confirm app usage, enforce authentication, monitor traffic   |
 
-- **Filtered Ports (examples):**
-  - `25/tcp` – SMTP  
-  - `143/tcp` – IMAP  
-  - `587/tcp` – Submission  
-  - `1433/tcp` – MS SQL  
-  - ...many others
-
-- **Risk:**
-  - Legacy services (NetBIOS/SMB) are frequent attack vectors.
-  - Third-party software may be outdated or misconfigured.
-  - Numerous filtered ports indicate service visibility to attackers.
-
-- **Mitigation:**
-  - Disable unused legacy protocols (NetBIOS, SMBv1).
-  - Patch Windows host and third-party services.
-  - Restrict access via local firewall or ACLs.
-  - Use endpoint protection and monitoring.
-
----
-
-## ✅ Recommendations
-
-- 🔐 **Segmentation** – Separate routers, VoIP, and user devices via VLANs.
-- 🔒 **Least Privilege** – Restrict unnecessary port access across the network.
-- 📊 **Monitoring** – Enable logging for all key services and use IDS/IPS.
-- 🔄 **Patch Management** – Regularly update firmware and operating systems.
-- 🛠️ **Repeat Scans** – Perform monthly Nmap scans to detect changes.
 
 ---
 
