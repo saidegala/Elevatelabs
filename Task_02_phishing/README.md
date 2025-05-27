@@ -1,7 +1,7 @@
 
 ---
 
-## 🔍 Step-by-Step Phishing Email Analysis
+## 🔍 Task 2: Analyze a Phishing Email Sample.
 
 ### 1. Check Email Headers for Discrepancies
 - Tools: [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx), [Google Header Analyzer](https://toolbox.googleapps.com/apps/messageheader/)
