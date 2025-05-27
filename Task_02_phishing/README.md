@@ -17,7 +17,7 @@
 ### 2. Examine the Sender's Email Address
 - Watch for spoofed or misspelled domains (e.g., `@paypa1.com` instead of `@paypal.com`)
 
-📸 Screenshot: `screenshots/spoofed_email_address.png`
+📸 ![Spoofed Email Address](screenshots/spoofed_email_address.png)
 
 ---
 
@@ -25,7 +25,7 @@
 - Hover over links without clicking
 - Ensure URLs match their claimed domain (e.g., `secure.apple.com` vs `apple-login.security.ru`)
 
-📸 Screenshot: `screenshots/mismatched_url_hover.png`
+📸 ![Mismatched URL Hover](screenshots/mismatched_url_hover.jpg)
 
 ---
 
@@ -35,14 +35,14 @@
   - "You must act now"
   - "Final warning!"
 
-📸 Screenshot: `screenshots/threatening_language.png`
+📸 ![Threatening Language](screenshots/threatening_language.png)
 
 ---
 
 ### 5. Check for Spelling or Grammar Errors
 - Phishing emails often contain awkward phrasing, misspellings, or odd formatting
 
-📸 Screenshot: `screenshots/grammar_errors.png`
+📸 ![Grammar Errors](screenshots/grammar_errors.png)
 
 ---
 
