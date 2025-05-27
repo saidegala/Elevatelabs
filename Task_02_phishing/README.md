@@ -26,7 +26,7 @@
 - Hover over links without clicking
 - Ensure URLs match their claimed domain 
 
-📸 <img src="screenshots/mismatched_url_hover.jpg" alt="Mismatched URL Hover" width="400" height="500" />
+📸 <img src="screenshots/mismatched_url_hover.jpg" alt="Mismatched URL Hover" width="1080" height="500" />
 
 ---
 
@@ -36,14 +36,14 @@
   - "You must act now"
   - "Final warning!"
 
-📸 <img src="screenshots/threatening_language.png" alt="Threatening Language" width="400" height="500" />
+📸 <img src="screenshots/threatening_language.png" alt="Threatening Language" width="1080" height="500" />
 
 ---
 
 ### 5. Check for Spelling or Grammar Errors
 - Phishing emails often contain awkward phrasing, misspellings, or odd formatting
 
-📸 <img src="screenshots/grammar_errors.png" alt="Grammar Errors" width="400" />
+📸 <img src="screenshots/grammar_errors.png" alt="Grammar Errors" width="1080" height="500" />
 
 ---
 
