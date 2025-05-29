@@ -1,7 +1,7 @@
 
 ---
 
-## 🔍 Step-by-Step Phishing Email Analysis
+## 🔍 Task 2: Analyze a Phishing Email Sample.
 
 ### 1. Check Email Headers for Discrepancies
 - Tools: [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx), [Google Header Analyzer](https://toolbox.googleapps.com/apps/messageheader/)
@@ -10,22 +10,23 @@
   - Failed SPF/DKIM/DMARC
   - Suspicious IP in `Received` fields
 
-📸 Screenshot: `screenshots/email_headers_analysis.png`
+📸 <img src="screenshots/email_headers_analysis.jpg" alt="Email Headers Analysis" width="1080" height="500" />
 
 ---
 
 ### 2. Examine the Sender's Email Address
-- Watch for spoofed or misspelled domains (e.g., `@paypa1.com` instead of `@paypal.com`)
+- Watch for spoofed or misspelled domains 
 
-📸 Screenshot: `screenshots/spoofed_email_address.png`
+📸 <img src="screenshots/spoofed_email_address.png" alt="Spoofed Email Address" width="1080" height="400" />
+
 
 ---
 
 ### 3. Identify Suspicious Links
 - Hover over links without clicking
-- Ensure URLs match their claimed domain (e.g., `secure.apple.com` vs `apple-login.security.ru`)
+- Ensure URLs match their claimed domain 
 
-📸 Screenshot: `screenshots/mismatched_url_hover.png`
+📸 <img src="screenshots/mismatched_url_hover.jpg" alt="Mismatched URL Hover" width="1080" height="500" />
 
 ---
 
@@ -35,14 +36,14 @@
   - "You must act now"
   - "Final warning!"
 
-📸 Screenshot: `screenshots/threatening_language.png`
+📸 <img src="screenshots/threatening_language.png" alt="Threatening Language" width="1080" height="500" />
 
 ---
 
 ### 5. Check for Spelling or Grammar Errors
 - Phishing emails often contain awkward phrasing, misspellings, or odd formatting
 
-📸 Screenshot: `screenshots/grammar_errors.png`
+📸 <img src="screenshots/grammar_errors.png" alt="Grammar Errors" width="1080" height="500" />
 
 ---
 
@@ -79,6 +80,3 @@ Screenshots used in this report are from trusted educational resources:
 
 ---
 
-## 📌 License
-
-This repository is for **educational purposes only**. Do not use any materials herein for malicious activities. Respect all copyrights.
