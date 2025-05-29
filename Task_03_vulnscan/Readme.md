@@ -80,16 +80,6 @@ This task involves performing a basic vulnerability scan on a local Windows mach
 
 ---
 
-## 📸 Screenshots
-
-> _Include screenshots of:_
-- Nessus dashboard
-- Scan configuration
-- Vulnerability results (sorted by severity)
-- Specific critical vulnerability details
-
----
-
 ## 📂 Notes
 
 - Nessus Essentials allows scanning up to **16 IPs**
