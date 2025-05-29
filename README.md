@@ -14,3 +14,11 @@
 * Deliverables: A report listing phishing indicators found.
 
 ## Outcome: : Awareness of phishing tactics and email threat analysis skills.
+
+## Task 3: Perform a Basic Vulnerability Scan on Your PC.
+
+* Objective: Use free tools to identify common vulnerabilities on your computer.
+* Tools: OpenVAS Community Edition (free vulnerability scanner) or Nessus Essentials.
+* Deliverables: Vulnerability scan report with identified issues.
+
+## Outcome: Introductory vulnerability assessment experience and understanding of common PC risks.
