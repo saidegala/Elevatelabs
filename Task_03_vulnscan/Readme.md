@@ -76,7 +76,6 @@ This task involves performing a basic vulnerability scan on a local Windows mach
 - **Risk**: Brute-force attack surface
 - **Fix**: Enable NLA, use strong passwords, or disable RDP
 
-> You can find detailed CVE references and suggested patches inside Nessus report results.
 
 ---
 
