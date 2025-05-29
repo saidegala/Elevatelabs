@@ -22,7 +22,7 @@ This task involves performing a basic vulnerability scan on a local Windows mach
 
 ### 📥 Download & Install Nessus Essentials
 - Visit: [https://www.tenable.com/products/nessus/nessus-essentials](https://www.tenable.com/products/nessus/nessus-essentials)
-- Provide your name and email (used [tempmail](https://tempmail.lol) for business email)
+- Provide your name and email (used [tempmail](https://temp-mail.org/en/) for business email)
 - Download and install Nessus for your OS
 - Enter the activation code sent to your email
 - Set up username and password
@@ -54,29 +54,29 @@ This task involves performing a basic vulnerability scan on a local Windows mach
 
 | Severity     | Count |
 |--------------|-------|
-| 🔴 Critical   | X     |
-| 🟠 Medium     | Y     |
-| 🟢 Low        | Z     |
+| 🔴 Critical   | 0   |
+| 🟠 Medium     | 02     |
+| 🟢 Low        | 0    |
+|  info         | 0 | 
 
-> *(Replace X, Y, Z with actual numbers from your report)*
 
 ---
+## 🔍 Critical Vulnerabilities & Mitigations
 
-## 🔍 Example Critical Vulnerabilities & Mitigations
+### 🔴 1. SMB Signing Not Required
+- **Risk**: Without SMB signing, attackers on the same network can perform man-in-the-middle (MITM) attacks, intercepting or altering SMB traffic.
+- **Fix**:
+  - Enable SMB signing via Group Policy:
+    - `Computer Configuration > Windows Settings > Security Settings > Local Policies > Security Options`
+    - Set **Microsoft network client: Digitally sign communications (always)** to **Enabled**
+  - Reboot to apply changes
 
-### 🔴 1. Outdated Software Detected (e.g., OpenSSL)
-- **Risk**: Allows remote code execution or man-in-the-middle attacks
-- **Fix**: Update to the latest version from the official vendor
-
-### 🔴 2. SMBv1 Enabled
-- **Risk**: Vulnerable to EternalBlue (used in WannaCry)
-- **Fix**: Disable SMBv1 via Windows Features or Group Policy
-
-### 🔴 3. Remote Desktop Exposed Without Network Level Authentication
-- **Risk**: Brute-force attack surface
-- **Fix**: Enable NLA, use strong passwords, or disable RDP
-
-
+### 🔴 2. SSL Certificate Cannot Be Trusted
+- **Risk**: The server is using an SSL certificate that is self-signed or not issued by a trusted certificate authority, which could allow attackers to impersonate the server.
+- **Fix**:
+  - Replace the certificate with one signed by a trusted Certificate Authority (CA)
+  - Ensure the full certificate chain is installed
+  - Use tools like [SSL Labs Test](https://www.ssllabs.com/ssltest/) to verify
 ---
 
 ## 📂 Notes
