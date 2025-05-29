@@ -98,13 +98,3 @@ This task involves performing a basic vulnerability scan on a local Windows mach
 
 ---
 
-## 🔐 Disclaimer
-
-This vulnerability scan was performed in a **controlled lab environment** on a personal/local device. All actions are intended for **educational and ethical** use only.
-
----
-
-## 📧 Contact
-
-Feel free to raise an issue or contact for any clarifications.
-
