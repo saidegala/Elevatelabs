@@ -1,7 +1,7 @@
 # 🔥 Task 4 – Firewall Configuration on Windows
 
-Hey there!  
-This is my documentation for Task 4 where I worked on Windows Firewall. The goal was to learn how to create, test, and remove custom firewall rules — all without breaking the system 😅. I’ve written down every step I followed in a way that made sense to me.
+This is my documentation for Task 4 where I worked on Windows Firewall. The goal was to learn how to create, test, and remove custom firewall rules
+— all without breaking the system 😅. I’ve written down every step I followed in a way that made sense to me.
 
 ---
 
@@ -46,6 +46,27 @@ To block connections coming into your system on Telnet's default port (23):
 
 You’ve now blocked incoming traffic on port 23.
 
+This tells Windows to block any incoming connection to port 23.
+
+---
+
+### 4. Simulate a Service Listening on Port 23 (For Testing)
+
+To actually test the firewall rule, something must be listening on port 23.  
+I used **PowerShell** to simulate a TCP server:
+Temporary tcp listener 
+
+#### 👉 Run this in PowerShell (as Administrator):
+
+```powershell
+$listener = New-Object System.Net.Sockets.TcpListener([System.Net.IPAddress]::Any, 23)
+$listener.Start()
+```
+when you finish 
+
+```
+$listener.stop()
+```
 ---
 
 ### 4. Test the Block Rule
@@ -58,3 +79,21 @@ Let’s check if port 23 is really blocked:
 2. Run:
    ```cmd
    telnet 127.0.0.1 23
+
+   
+4. Test the Rule Using Nmap
+With the listener running, I tested the port using nmap:
+```
+nmap -p 23 localhost/ip address
+```
+
+7. Remove the Test Rule (Cleanup)
+To clean up:
+
+Go to Inbound Rules
+
+Find the rule: Block Telnet Port 23
+
+Right-click and choose Delete
+
+
