@@ -87,7 +87,7 @@ With the listener running, I tested the port using nmap:
 nmap -p 23 localhost/ip address
 ```
 
-### 5. Remove the Test Rule (Cleanup)
+### 6. Remove the Test Rule (Cleanup)
 To clean up:
 
 Go to Inbound Rules
