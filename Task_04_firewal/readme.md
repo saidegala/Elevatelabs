@@ -69,7 +69,7 @@ $listener.stop()
 ```
 ---
 
-### 4. Test the Block Rule
+### 5. Test the Block Rule
 
 Let’s check if port 23 is really blocked:
 
@@ -87,7 +87,7 @@ With the listener running, I tested the port using nmap:
 nmap -p 23 localhost/ip address
 ```
 
-7. Remove the Test Rule (Cleanup)
+### 5. Remove the Test Rule (Cleanup)
 To clean up:
 
 Go to Inbound Rules
