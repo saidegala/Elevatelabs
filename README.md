@@ -22,3 +22,11 @@
 * Deliverables: Vulnerability scan report with identified issues.
 
 ## Outcome: Introductory vulnerability assessment experience and understanding of common PC risks.
+
+## Task 4 : Setup and Use a Firewall on Windows/Linux
+
+* Objective: Configure and test basic firewall rules to allow or block traffic.
+* Tools: Windows Firewall / UFW (Uncomplicated Firewall) on Linux.
+* Deliverables: Screenshot/configuration file showing firewall rules applied.
+
+## Outcome: Basic firewall management skills and understanding of network traffic filtering.
