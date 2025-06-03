@@ -67,5 +67,3 @@ Password complexity directly affects how resistant your password is to being gue
 
 ---
 
-## 📁 Repository Structure
-
