@@ -44,3 +44,11 @@
 * Deliverables: Report showing password strength results and explanation.
 
 ## Outcome: Understanding password security and best practices.
+
+## Task 7 :Identify and Remove Suspicious Browser Extensions
+
+* Objective: Learn to spot and remove potentially harmful browser extensions.
+* Tools:Any web browser (Chrome, Firefox)
+* Deliverables: List of suspicious extensions found and removed (if any)
+
+## Outcome: Awareness of browser security risks and managing browser extensions.
