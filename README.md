@@ -52,3 +52,11 @@
 * Deliverables: List of suspicious extensions found and removed (if any)
 
 ## Outcome: Awareness of browser security risks and managing browser extensions.
+
+## Task 8 :Identify and Remove Suspicious Browser Extensions
+
+* Objective: Understand the role of VPNs in protecting privacy and secure communication.
+* Tools:Free VPN client (ProtonVPN free tier, Windscribe free)
+* Deliverables: Report describing VPN setup steps and connection status screenshot.
+
+## Outcome: Hands-on experience with VPNs and understanding of privacy tools.
