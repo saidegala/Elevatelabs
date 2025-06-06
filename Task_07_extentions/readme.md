@@ -2,7 +2,7 @@
 
 A real-world walkthrough cleaning up browser extensions for better security, speed, and privacy.
 
-## 🔍 Extensions Audit Summary
+## 🔍 My Extensions Summary
 
 | Extension | Keep/Remove | Reason |
 |----------|-------------|--------|
