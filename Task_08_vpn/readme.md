@@ -1,6 +1,4 @@
-# 🛡️ ProtonVPN Free Setup, Testing, and Summary (All-in-One)
-
-This guide walks you through everything you need to know and do — from installing a free VPN (ProtonVPN), connecting to a secure server, checking your IP address, verifying traffic encryption, testing speeds, researching how VPNs work, and summarizing benefits and limitations — all in one single file.
+# 🛡️ ProtonVPN Free Setup
 
 ---
 
@@ -8,7 +6,7 @@ This guide walks you through everything you need to know and do — from install
 
 ### 🔹 Step 1: Choose a Free VPN
 
-We will use **ProtonVPN** — a privacy-respecting VPN with a free plan.
+I use **ProtonVPN** — a privacy-respecting VPN with a free plan.
 
 - Website: [https://protonvpn.com](https://protonvpn.com)
 - Reasons to choose:
@@ -41,94 +39,82 @@ We will use **ProtonVPN** — a privacy-respecting VPN with a free plan.
 ```bash
 sudo apt install -y protonvpn-cli
 protonvpn init
+```
 
 🔹 Step 4: Connect to a VPN Server
-Open ProtonVPN app
-
-Click Quick Connect or select a Free Server
-
-Wait until it says "Connected"
+  
+  1. Open ProtonVPN app
+  2. Click Quick Connect or select a Free Server
+  3. Wait until it says "Connected"
 
 🔹 Step 5: Check Your IP Address
-Before and after connecting, visit https://whatismyipaddress.com:
+
+  1. Before and after connecting, visit https://whatismyipaddress.com:
 
 🔸 Example (Before VPN):
 
+```
 IP: 105.22.113.78  
 Location: Lagos, Nigeria  
 ISP: MTN Nigeria
-
+```
 
 🔸 Example (After VPN Connected):
-
+```
 IP: 185.159.157.6  
 Location: Amsterdam, Netherlands  
 ISP: ProtonVPN AG
 
-
+```
 
 🔹 Step 6: Verify Traffic Is Encrypted
-Visit any HTTPS website (e.g., https://example.com)
-
-Look for the padlock icon 🔒 in the browser address bar
-
-Press F12 → go to Network tab
-
-Check that all requests are using HTTPS
-
-✅ This means your traffic is encrypted and secure.
+  1. Visit any HTTPS website (e.g., https://example.com)
+  2. Look for the padlock icon 🔒 in the browser address bar
+  3. Press F12 → go to Network tab
+  4. Check that all requests are using HTTPS
+  5. This means your traffic is encrypted and secure.
 
 🔹 Step 7: Check Speed Before and After VPN
-Use https://www.speedtest.net to compare:
+  Use https://www.speedtest.net to compare:
 
 🔸 Without VPN:
-makefile
-Copy
-Edit
+```
 Ping: 12 ms  
 Download: 92 Mbps  
 Upload: 18 Mbps
+```
 🔸 With VPN:
-makefile
-Copy
-Edit
+```
 Ping: 48 ms  
 Download: 34 Mbps  
 Upload: 7 Mbps
+```
+
 ⚠️ Expect a slowdown when connected due to encryption and routing — this is normal.
 
 🔹 Step 8: Research on VPN Technology
-ProtonVPN (Free) includes:
-
-Protocols: OpenVPN, WireGuard
-
-Encryption: AES-256 (military grade)
-
-DNS Leak Protection: Enabled by default
-
-No Logging: Strong no-logs privacy policy
-
-Open-source Clients: Transparent and audited
+  1. ProtonVPN (Free) includes:
+  2. Protocols: OpenVPN, WireGuard
+  3. Encryption: AES-256 (military grade)
+  4. DNS Leak Protection: Enabled by default
+  5. No Logging: Strong no-logs privacy policy
+  6. Open-source Clients: Transparent and audited
 
 Learn more: https://protonvpn.com/blog/is-protonvpn-safe/
 
 🔹 Step 9: Summary of VPN Benefits & Limitations
+
 ✅ Benefits:
-Hides your real IP address
 
-Encrypts your online activity
-
-Secures public Wi-Fi usage
-
-Bypasses geo-blocks (limited in free tier)
-
-Prevents ISP tracking and surveillance
+  1. Hides your real IP address
+  2. Encrypts your online activity
+  3. Secures public Wi-Fi usage
+  4. Bypasses geo-blocks (limited in free tier)
+  5. Prevents ISP tracking and surveillance
 
 ⚠️ Limitations:
-Slower speeds (especially on free tier)
 
-Free servers limited to a few locations
-
-Some websites block VPN IPs (e.g., Netflix)
-
-Requires trust in the VPN provider
+  1. Slower speeds (especially on free tier)
+  2. Free servers limited to a few locations
+  3. Some websites block VPN IPs (e.g., Netflix)
+  4. Requires trust in the VPN provider
